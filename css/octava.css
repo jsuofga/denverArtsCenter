@@ -1,0 +1,152 @@
+    body {
+        display: flex;
+        min-height: 80vh;
+        flex-direction: column;
+        background-color: rgb(28,28,30);
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+    .top{
+        z-index:500;
+        opacity:.25;
+        margin-top: 1rem;
+    }
+   
+    #page1{
+        visibility:visible;
+        z-index:100;
+        /* position:relative; */
+        position:absolute; 
+        top:0px;
+        left:0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:70vh;
+        width:100vw;
+        background-color: rgb(28,28,30);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #page2,#page3{
+        visibility:visible;
+        z-index:0;
+        position:absolute;
+        top:0px;
+        left:0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:70vh;
+        width:100vw;
+        background-color: rgb(28,28,30);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #page3{
+        z-index:-100;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-gap: 5px;
+    }
+
+  .grid-item{
+   
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .button{
+        background-color:white;
+        color: rgb(28,28,30);
+        cursor: pointer;
+        margin:.5rem;
+        border-radius: 1rem;
+        border:.25rem;
+        font-size: 1rem;
+        width:6rem;
+        height:6rem;
+            
+    }
+
+   i{
+        color:#2196f3;
+    }
+
+     #SwitchBtn,#SnapShotsBtn {
+        color:white;
+    }
+    
+    #TVonBtn {
+        color:rgb(52,199,89);
+    }
+
+    #TVoffBtn {
+        color:rgb(255,59,48);
+    }
+
+    .alert {
+         color:red;
+    }
+    #footer{
+         background-color: rgb(28,28,30);
+    }
+
+    .snapshotImg{
+        width: 160px;
+        height: 90px;
+        margin:0px;
+
+    }
+    .txCapture,.rxCapture{
+        position:relative;
+    }
+    .rxCaptureLabel{
+        position: absolute;
+        top:0px;
+        left:0px;
+        background: #2196f3;
+    }
+    .txCaptureBtn{
+    position: absolute;
+    bottom:-10%;
+    right:5%;
+  
+}
+.txBtn{
+        background-color : #2196f3;
+        color:white;
+        border:none;
+        border-radius: 3px;
+        padding: .05rem;
+        width:5rem;
+
+}
+
+.material-icons.txIcon{
+    color:white;
+}
+#footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.innerfooter{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+     margin-right: 1rem;
+ 
+}
+

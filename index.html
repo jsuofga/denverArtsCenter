@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="materialize-v1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/octava.css">
+
+    <!-- Icons hosted locally-->
+    <link href="css/material-icons.css" rel="stylesheet">
+
+
+    <title>PRO DSX Controller V4.27.20</title>
+    <link rel="icon" href="images/octava_1024.png">
+</head>
+<body class ='white-text'>
+<nav>
+    <div class="nav-wrapper top">
+        <a href="#" class="brand-logo center"><img src='images/octava_logo_white-200.png' width='100px'> </a>
+               
+    </div>
+</nav>
+
+   <main class="container">
+
+        <div id = 'page1'>
+            <h6 class='center'>Front of House Video</h6>
+            
+            <div class='grid-container'>
+                <div class='grid-item'><button id='page1Btn1' class='button' value='1'>TV1<div><i id='tv1Input'class='material-icons'></i></div></button></div>
+                <div class='grid-item'><button id='page1Btn2' class='button' value='2'>TV2<div><i id='tv2Input'class='material-icons'></i></div></button></div>
+            
+                <div class='grid-item'><button id='page1Btn3' class='button' value='3'>TV3<div><i id='tv3Input'class='material-icons'></i></div></button></div>
+                <div class='grid-item'><button id='page1Btn4' class='button' value='4'>TV4<div><i id='tv4Input'class='material-icons'></i></div></button></div>
+            
+                <div class='grid-item'><button id='page1Btn5' class='button' value='5'>TV5<div><i id='tv5Input'class='material-icons'></i></div></button></div>
+                <div class='grid-item'><button id='page1Btn6' class='button' value='all'>TV-All</button></div>
+            
+            </div>
+
+        </div>
+
+        <div id='page2'>
+            <h6 class='center'>Select Video</h6>
+            <div class='grid-container'>
+
+                <div class = 'grid-item'>Stage</div>
+                <div class='grid-item'>Ad Player</div>
+                
+                <div class='grid-item'>
+                    <div class='txCapture'><img class='snapshotImg' id='tx1Preview' src='images/capture.jpg'>
+                        <div class='txCaptureBtn'><button id='page2Btn1' class='txBtn' value='001'>
+                            <i class="material-icons txIcon">videocam</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='grid-item'>
+                    
+                    <div class='txCapture'><img class='snapshotImg' id='tx2Preview' src='images/capture.jpg'>
+                        <div class='txCaptureBtn' ><button id='page2Btn2' class='txBtn' value='002'>
+                            <i class="material-icons txIcon">message</i></button></div>
+                        </div>
+                    </div>
+
+                <!-- <div class='grid-item'><button id='page2Btn1' class='button' value='001'><div><i class="material-icons">videocam</i></div>Stage</button></div>
+                <div class='grid-item'><button id='page2Btn2' class='button' value='002'><div><i class="material-icons">message</i></div>Message</button></div> -->
+
+            
+            </div>
+        </div>
+
+        <div id='page3'>
+            <h5 class='center'></h5>
+        
+            <div class='grid-container'>
+
+                <div class='grid-item'><div></div><div class = 'rxCapture'><img class='snapshotImg' id='rx1Preview' src=''><div class = 'rxCaptureLabel'>TV1</div></div></div>
+                <div class='grid-item'><div></div><div class = 'rxCapture'><img class='snapshotImg' id='rx2Preview' src=''><div class = 'rxCaptureLabel'>TV2</div></div></div>
+                <div class='grid-item'><div></div><div class = 'rxCapture'><img class='snapshotImg' id='rx3Preview' src=''><div class = 'rxCaptureLabel'>TV3</div></div></div>
+                <div class='grid-item'><div></div><div class = 'rxCapture'><img class='snapshotImg' id='rx4Preview' src=''><div class = 'rxCaptureLabel'>TV4</div></div></div>
+                <div class='grid-item'><div></div><div class = 'rxCapture'><img class='snapshotImg' id='rx5Preview' src=''><div class = 'rxCaptureLabel'>TV5</div></div></div>
+                    
+            </div>
+        
+        </div>
+  
+        <!-- <div class="fixed-action-btn">
+            <a class="btn-floating btn-large blue">
+                <i class="large material-icons">tv</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating blue"><i id = 'SwitchBtn' class="material-icons">home</i></a></li>
+                <li><a class="btn-floating orange"><i id = 'SnapShotsBtn'class="material-icons">visibility</i></a></li>
+                <li><a class="btn-floating green"><i id = 'TVonBtn' class="material-icons">power_settings_new</i></a></li>
+                <li><a class="btn-floating red"><i id = 'TVoffBtn' class="material-icons">settings_power</i></a></li>
+        </div> -->
+
+    </main>
+
+    <footer id = 'footer' class="page-footer">
+
+            
+                <div class = 'innerfooter'>
+                    <i id = 'SwitchBtn' class="material-icons">home</i>
+                    <div>Home</div>
+                </div>    
+                <div class='innerfooter'>
+                    <i id = 'SnapShotsBtn' class="material-icons">visibility</i>
+                    <div>View</div>
+                </div>
+                <div class='innerfooter'>
+                    <i id = 'TVonBtn' class="material-icons">power_settings_new</i>
+                    <div>TV on</div>
+                </div>
+                <div class='innerfooter'>
+                    <i id = 'TVoffBtn' class="material-icons">settings_power</i>
+                    <div>TV off</div>
+                </div>
+            
+    
+       
+    </footer>
+
+    <script src="materialize-v1.0.0/js/materialize.min.js"></script>
+    <script src='js/script.js'></script>
+    <script>
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var elems = document.querySelectorAll('.fixed-action-btn');
+        //     var instances = M.FloatingActionButton.init(elems, {
+        //         direction: 'left'
+        //     });
+        // });
+
+        // const sideNav = document.querySelector('.sidenav');
+        // M.Sidenav.init(sideNav, {});
+        
+    </script>
+
+    
+</body>
+</html>
