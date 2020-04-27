@@ -7,3 +7,5 @@ DPAC requested custom control interface for the Front of House Audio Video Syste
 4. Video source view with screen capture of TX
 5. View and monitor all displays with screen capture of RX
 6. FeedBack to monitor connected RX.
+
+Uses locally hosted Material CSS and Material Icons
